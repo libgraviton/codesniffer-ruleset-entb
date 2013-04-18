@@ -1,0 +1,5 @@
+= PHP CodeSniffer Ruleset ENTB
+
+PHP CodeSniffer ruleset used throughout libgraviton and in libgraviton based projects.
+
+Defines a phpcs ruleset called "ENTB" that is in active use.
