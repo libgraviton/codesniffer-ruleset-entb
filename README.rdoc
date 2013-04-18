@@ -1,5 +1,22 @@
 = PHP CodeSniffer Ruleset ENTB
 
-PHP CodeSniffer ruleset used throughout libgraviton and in libgraviton based projects.
+PHP CodeSniffer ruleset used throughout libgraviton and 
+in libgraviton based projects.
 
-Defines a phpcs ruleset called "ENTB" that is in active use.
+Defines a phpcs ruleset called "ENTB" that is in active 
+use.
+
+== Installation
+
+Copy the contents of <tt>src/</tt> into your main PEAR 
+directory after having installed the PHP_CodeSniffer 
+package from the default PEAR channel.
+
+== Usage
+
+  phpcs --standard=ENTB <file>
+
+== Developers
+
+Please submit proper pull requests if you would like 
+to influence our coding standard for the better.
