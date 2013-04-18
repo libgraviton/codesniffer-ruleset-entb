@@ -8,7 +8,15 @@ use.
 
 == Installation
 
-Copy the contents of <tt>src/</tt> into your main PEAR 
+Use composer like so
+
+  {
+    "require": {
+      "libgraviton/codesniffer": "*",
+    }
+  }
+
+or copy the contents of <tt>src/</tt> into your main PEAR 
 directory after having installed the PHP_CodeSniffer 
 package from the default PEAR channel.
 
