@@ -1,4 +1,5 @@
 {
+	"name": "libgraviton/codesniffer",
 	"type": "library",
 	"keywords": ["libgraviton","codesniffer"],
 
