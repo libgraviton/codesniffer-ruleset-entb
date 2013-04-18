@@ -1,0 +1,18 @@
+{
+	"type": "library",
+	"keywords": ["libgraviton","codesniffer"],
+
+	"require": {
+		"squizlabs/php_codesniffer": "*"
+	},
+
+	"scripts": {
+		"post-update-cmd": [
+			"mv -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/",
+		],
+		"post-install-cmd": [
+			"mv -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/",
+		]
+	}
+
+}
