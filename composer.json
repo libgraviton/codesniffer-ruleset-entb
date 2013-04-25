@@ -9,10 +9,10 @@
 
 	"scripts": {
 		"post-update-cmd": [
-			"mv -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
+			"rsync -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
 		],
 		"post-install-cmd": [
-			"mv -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
+			"rsync -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
 		]
 	}
 
