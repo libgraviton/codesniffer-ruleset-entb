@@ -8,6 +8,6 @@
 	},
 
         "extra": {
-                "phpcs-standard": "ENTB",
+                "phpcs-standard": "ENTB"
         }
 }
