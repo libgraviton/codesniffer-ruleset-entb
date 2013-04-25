@@ -24,11 +24,11 @@ installation.
 
 == Usage
 
-use the composer version
+Use the composer version
 
   ./vendor/bin/phpcs --standard=ENTB src/ test/
 
-or the clone inside your PEAR directory
+or the clone inside your PEAR directory.
 
   phpcs --standard=ENTB src/ test/
 
