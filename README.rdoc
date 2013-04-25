@@ -11,7 +11,7 @@ use.
 Use composer like so
 
   {
-    "require": {
+    "require-dev": {
       "libgraviton/codesniffer": "*",
     }
   }
