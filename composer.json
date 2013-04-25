@@ -4,7 +4,10 @@
 	"keywords": ["libgraviton","codesniffer"],
 
 	"require": {
-		"squizlabs/php_codesniffer": "*",
                 "goatherd/phpcs_installer": "*"
-	}
+	},
+
+        "extra": {
+                "phpcs-standard": "ENTB",
+        }
 }
