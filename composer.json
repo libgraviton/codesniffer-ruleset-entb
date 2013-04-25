@@ -1,13 +1,11 @@
 {
-	"name": "libgraviton/codesniffer",
-	"type": "phpcs-standard",
-	"keywords": ["libgraviton","codesniffer"],
-
-	"require": {
-                "goatherd/phpcs_installer": "*"
-	},
-
-        "extra": {
-                "phpcs-standard": "ENTB"
-        }
+  "name": "libgraviton/codesniffer",
+  "type": "phpcs-standard",
+  "keywords": ["libgraviton","codesniffer"],
+  "require": {
+    "goatherd/phpcs_installer": "*"
+  },
+  "extra": {
+    "phpcs-standard": "ENTB"
+  }
 }
