@@ -16,16 +16,24 @@ Use composer like so
     }
   }
 
-or clone the git repo into an existing PEAR/PHP_CodeSniffer installation.
+or clone the git repo into an existing PEAR/PHP_CodeSniffer 
+installation.
 
   cd `pear config-get php_dir`/PHP/CodeSniffer/Standards
   git clone https://github.com/libgraviton/codesniffer-ruleset-entb PEAR
 
 == Usage
 
-  phpcs --standard=ENTB <file>
+use the composer version
+
+  ./vendor/bin/phpcs --standard=ENTB src/ test/
+
+or the clone inside your PEAR directory
+
+  phpcs --standard=ENTB src/ test/
 
 == Developers
 
 Please submit proper pull requests if you would like 
 to influence our coding standard for the better.
+
