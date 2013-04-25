@@ -16,9 +16,10 @@ Use composer like so
     }
   }
 
-or copy the contents of <tt>src/</tt> into your main PEAR 
-directory after having installed the PHP_CodeSniffer 
-package from the default PEAR channel.
+or clone the git repo into an existing PEAR/PHP_CodeSniffer installation.
+
+  cd `pear config-get php_dir`/PHP/CodeSniffer/Standards
+  git clone https://github.com/libgraviton/codesniffer-ruleset-entb PEAR
 
 == Usage
 
