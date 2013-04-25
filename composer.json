@@ -1,19 +1,10 @@
 {
 	"name": "libgraviton/codesniffer",
-	"type": "library",
+	"type": "phpcs-standard",
 	"keywords": ["libgraviton","codesniffer"],
 
 	"require": {
-		"squizlabs/php_codesniffer": "*"
+		"squizlabs/php_codesniffer": "*",
+                "goatherd/phpcs_installer": "*"
 	},
-
-	"scripts": {
-		"post-update-cmd": [
-			"rsync -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
-		],
-		"post-install-cmd": [
-			"rsync -r src/PHP/CodeSniffer/Standards/ENTB ../../squizlabs/php_codesniffer/CodeSniffer/Standards/"
-		]
-	}
-
 }
