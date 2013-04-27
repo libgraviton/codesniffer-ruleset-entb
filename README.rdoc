@@ -8,15 +8,32 @@ use.
 
 == Installation
 
-Copy the contents of <tt>src/</tt> into your main PEAR 
-directory after having installed the PHP_CodeSniffer 
-package from the default PEAR channel.
+Use composer like so
+
+  {
+    "require-dev": {
+      "libgraviton/codesniffer": "*",
+    }
+  }
+
+or clone the git repo into an existing PEAR/PHP_CodeSniffer 
+installation.
+
+  cd `pear config-get php_dir`/PHP/CodeSniffer/Standards
+  git clone https://github.com/libgraviton/codesniffer-ruleset-entb PEAR
 
 == Usage
 
-  phpcs --standard=ENTB <file>
+Use the composer version
+
+  ./vendor/bin/phpcs --standard=ENTB src/ test/
+
+or the clone inside your PEAR directory.
+
+  phpcs --standard=ENTB src/ test/
 
 == Developers
 
 Please submit proper pull requests if you would like 
 to influence our coding standard for the better.
+
