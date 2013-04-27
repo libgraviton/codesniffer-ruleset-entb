@@ -2,6 +2,10 @@
   "name": "libgraviton/codesniffer",
   "type": "phpcs-standard",
   "keywords": ["libgraviton","codesniffer"],
+  "license": [
+       "BSD-3-Clause",
+       "GPL-3.0+"
+  ]
   "require": {
     "goatherd/phpcs_installer": "*"
   },
