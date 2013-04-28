@@ -20,7 +20,7 @@ or clone the git repo into an existing PEAR/PHP_CodeSniffer
 installation.
 
   cd `pear config-get php_dir`/PHP/CodeSniffer/Standards
-  git clone https://github.com/libgraviton/codesniffer-ruleset-entb PEAR
+  git clone https://github.com/libgraviton/codesniffer-ruleset-entb ENTB
 
 == Usage
 
