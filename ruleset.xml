@@ -29,7 +29,9 @@
  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
  <rule ref="ENTB.NamingConventions.ValidInterfaceName"/>
  <rule ref="Generic.Debug.ClosureLinter"/>
- <rule ref="Zend.NamingConventions.ValidVariableName"/>
+ <rule ref="Zend.NamingConventions.ValidVariableName">
+   <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ </rule>
 
  <!-- Lines can be 80 chars long, show errors at 120 chars -->
  <rule ref="Generic.Files.LineLength">
