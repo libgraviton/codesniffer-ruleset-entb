@@ -52,8 +52,8 @@ class ENTB_Sniffs_NamingConventions_ValidInterfaceNameSniff implements PHP_CodeS
             $phpcsFile->addError($error, $stackPtr);
         }
 
-        if (preg_match('|_Interface$|', $name) === 0) {
-            $error = $name.' name must end with _Interface';
+        if (preg_match('|Interface$|', $name) === 0) {
+            $error = $name.' name must end with Interface';
             $phpcsFile->addError($error, $stackPtr);
         }
 
