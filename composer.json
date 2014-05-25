@@ -1,6 +1,6 @@
 {
   "name": "libgraviton/codesniffer",
-  "version": "1.1.0",
+  "version": "1.2.0-dev",
   "type": "phpcs-standard",
   "keywords": ["libgraviton","codesniffer"],
   "license": [
