@@ -8,7 +8,6 @@
        "GPL-3.0+"
   ],
   "require": {
-    "goatherd/phpcs_installer": "*"
   },
   "extra": {
     "phpcs-standard": "ENTB"
