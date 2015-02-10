@@ -9,7 +9,5 @@
   ],
   "require": {
   },
-  "extra": {
-    "phpcs-standard": "ENTB"
-  }
+  "target-dir": "CodeSniffer/Standards/ENTB"
 }
