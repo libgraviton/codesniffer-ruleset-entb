@@ -39,7 +39,7 @@ class ENTB_Sniffs_Commenting_FileCommentSniff extends PEAR_Sniffs_Commenting_Fil
             // allow simple urls
             $urlPattern = 'https?\:\/\/[a-z]+[.]+[a-z]+[a-zA-Z\/]*';
             if (preg_match('/^([^<]*)\s+<(('.$urlPattern.'|'.$mailPattern.')>$/', $content) === 0) {
-                $error = 'Content of the @author tag must be in the form "Display Name <username@example.com>"';
+                $error = 'Content of the @author tag must be in the form "Display Name <Email|URL>"';
                 $phpcsFile->addError($error, $tag, 'InvalidAuthors');
             }
         }
