@@ -34,6 +34,9 @@
  <rule ref="Zend.NamingConventions.ValidVariableName">
    <exclude name="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
  </rule>
+ <rule ref="PEAR">
+   <exclude name="PEAR.Commenting.ClassComment.InvalidAuthors"/>
+ </rule>
 
  <!-- LineLength rules are as relaxed as PSR2 (down from 80/120) -->
  <rule ref="Generic.Files.LineLength">
