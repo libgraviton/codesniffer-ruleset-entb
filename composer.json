@@ -1,6 +1,5 @@
 {
   "name": "libgraviton/codesniffer",
-  "version": "1.2.0",
   "type": "phpcs-standard",
   "keywords": ["libgraviton","codesniffer"],
   "license": [
@@ -8,9 +7,6 @@
        "GPL-3.0+"
   ],
   "require": {
-    "goatherd/phpcs_installer": "*"
   },
-  "extra": {
-    "phpcs-standard": "ENTB"
-  }
+  "target-dir": "CodeSniffer/Standards/ENTB"
 }

@@ -27,7 +27,11 @@
  <rule ref="Zend.Debug.CodeAnalyzer"/>
  <rule ref="PEAR.Commenting.FunctionComment"/>
  <rule ref="Squiz.Commenting.EmptyCatchComment"/>
- <rule ref="PEAR.Commenting.ClassComment"/>
+ <rule ref="PEAR.Commenting.ClassComment">
+   <exclude name="PEAR.Commenting.ClassComment.InvalidAuthors"/>
+   <exclude name="PEAR.Commenting.ClassComment.MissingCategoryTag"/>
+   <exclude name="PEAR.Commenting.ClassComment.MissingPackageTag"/>
+ </rule>
  <rule ref="Squiz.Commenting.DocCommentAlignment"/>
  <rule ref="ENTB.NamingConventions.ValidInterfaceName"/>
  <rule ref="Generic.Debug.ClosureLinter"/>
@@ -48,6 +52,16 @@
   <properties>
    <property name="eolChar" value="\n"/>
   </properties>
+ </rule>
+
+ <!-- only use tags in class comment and not in file -->
+ <rule ref="ENTB.Commenting.FileComment">
+   <exclude name="ENTB.Commenting.FileComment.MissingVersion"/>
+   <exclude name="ENTB.Commenting.FileComment.MissingCategoryTag"/>
+   <exclude name="ENTB.Commenting.FileComment.MissingPackageTag"/>
+   <exclude name="ENTB.Commenting.FileComment.MissingAuthorTag"/>
+   <exclude name="ENTB.Commenting.FileComment.MissingLicenseTag"/>
+   <exclude name="ENTB.Commenting.FileComment.MissingLinkTag"/>
  </rule>
 
 </ruleset>
