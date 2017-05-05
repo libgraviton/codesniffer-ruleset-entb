@@ -1,12 +1,12 @@
 {
   "name": "libgraviton/codesniffer",
   "type": "phpcs-standard",
-  "keywords": ["libgraviton","codesniffer"],
+  "keywords": ["libgraviton","graviton","codesniffer"],
   "license": [
-       "BSD-3-Clause",
-       "GPL-3.0+"
+    "BSD-3-Clause",
+    "GPL-3.0+"
   ],
   "require": {
-  },
-  "target-dir": "CodeSniffer/Standards/ENTB"
+    "squizlabs/php_codesniffer": ">=3.0.0"
+  }
 }
