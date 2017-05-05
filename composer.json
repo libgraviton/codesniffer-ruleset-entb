@@ -7,12 +7,9 @@
     "GPL-3.0+"
   ],
   "autoload": {
-    "autoload": {
-      "psr-4": {"Graviton\\Sniff\\": "src/"}
-    },
-    "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
+    "psr-4": {"Graviton\\Sniff\\": "src/"}
   },
-  "require": {
+  "require-dev": {
     "squizlabs/php_codesniffer": ">=3.0.0"
   }
 }
