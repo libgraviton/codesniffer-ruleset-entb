@@ -1,9 +1,13 @@
 <?php
+
+namespace Graviton\Sniff;
+
+use PHP_CodeSniffer\Files\File;
+use PHP_CodeSniffer\Sniffs\Sniff;
+
 /**
  * Ensure that Interfaces are named as they should
  *
- * PHP version 5
- * 
  * @category  PHP
  * @package   PHP_CodeSniffer
  * @author    Greg Sherwood <gsherwood@squiz.net>
@@ -11,9 +15,9 @@
  * @copyright 2006-2011 Squiz Pty Ltd (ABN 77 084 670 600)
  * @license   http://matrix.squiz.net/developer/tools/php_cs/licence BSD Licence
  * @link      http://pear.php.net/package/PHP_CodeSniffer
- * @class 
+ * @class
  */
-class ENTB_Sniffs_NamingConventions_ValidInterfaceNameSniff implements PHP_CodeSniffer_Sniff
+class ValidInterfaceNameSniff implements Sniff
 {
     /**
      * welche tokens wollen wir sniffen
@@ -36,7 +40,7 @@ class ENTB_Sniffs_NamingConventions_ValidInterfaceNameSniff implements PHP_CodeS
      *
      * @return void
      */
-    public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    public function process(File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -56,8 +60,5 @@ class ENTB_Sniffs_NamingConventions_ValidInterfaceNameSniff implements PHP_CodeS
             $error = $name.' name must end with Interface';
             $phpcsFile->addError($error, $stackPtr);
         }
-
-
-    }//end process()
-
+    }
 }
