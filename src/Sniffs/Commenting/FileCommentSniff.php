@@ -59,7 +59,7 @@ class FileCommentSniff implements Sniff
         $localMiddle = $local.'.\w';
         $mailPattern = '['.$local.'](['.$localMiddle.']*['.$local.'])*@[\da-zA-Z][-.\w]*[\da-zA-Z]\.[a-zA-Z]{2,7})';
         // allow simple urls
-        $urlPattern = 'https?\:\/\/[a-z]+[.]+[a-z]+[a-zA-Z\/]*';
+        $urlPattern = '(http[s]?:\/\/)?[^\s(["<,>]*\.[^\s[",><]*';
         if (preg_match('/^([^<]*)\s+<(('.$urlPattern.'|'.$mailPattern.')>$/', $content) === 0) {
             $error = 'Content of the @author tag must be in the form "Display Name <Email|URL>"';
             $phpcsFile->addError($error, $tokenValue, 'InvalidAuthors');
